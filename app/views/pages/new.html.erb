@@ -1,0 +1,40 @@
+<body>
+     <div class="menu">
+        <ul>
+            <li><a href="/">Home</a>
+            </li>
+            <li><a href="/about">About</a>
+            </li>
+            <li><a href="/new">Contact</a>
+            </li>
+        </ul> <img alt="Close" class="icon-close" src="https://stories-rails.herokuapp.com//assets/close-0c9147fa56a8cfd00e1f6b29e91458dc.svg" width="24px"> </div>
+    <div class="home-main"> <img alt="Open" class="icon-menu" src="https://stories-rails.herokuapp.com/assets/open-9688b19dacd0cc7d027490776ace74ff.svg" width="24px">
+        <div class="content container">
+            <h1>Get the latest updates from Stories</h1>
+            <div class="row">
+                <div class="col-md-4 col-md-4-offset"></div>
+                <div class="col-md-4">
+                    <form accept-charset="UTF-8" action="/signups" class="new_signup" id="new_signup" method="post">
+                        <div style="display:none">
+                            <input name="utf8" type="hidden" value="✓">
+                            <input name="authenticity_token" type="hidden" value="MZUH7Flv6/FTWFdmRotDvsukg+eSpCpwt48LOp8dPGY=">
+                        </div>
+                      
+                        <%= form_for(@signup) do |f| %>
+                      <%= f.text_field :firstname, :placeholder => "First Name" %>
+                      <%= f.text_field :email, :placeholder => "Email" %>
+        <%= f.submit "Join", :class => "btn" %>
+        <% end %>
+                      
+                </div>
+            </div>
+            <div class="col-md-4 col-md-4-offset"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>A Shutterbugg Project</p>
+        </div>
+    </div>
+    <script data-turbolinks-track="true" src="/assets/application-5ec8317a69c812470d7789bf2f91d0dd.js"></script>
+</body>

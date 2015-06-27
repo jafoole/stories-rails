@@ -5,6 +5,15 @@ class PagesController < ApplicationController
   def about
   end
   
-  def contact
+  def signups
   end
+  
+  def thanks
+    
+  end
+  
+  def new
+    @signup = Signup.new
+  end
+
 end
